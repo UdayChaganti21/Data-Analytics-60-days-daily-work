@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="bussiness.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1259"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><table title="Orders" custom_title="0" dock_id="2" table="4,6:mainOrders"/><dock_state state="000000ff00000000fd00000001000000020000000000000000fc0100000002fb000000160064006f0063006b00420072006f00770073006500310100000000ffffffff0000000000000000fb000000160064006f0063006b00420072006f00770073006500320100000000ffffffff0000011800ffffff000000000000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings/></tab_browse><tab_sql><sql name="SQL 1*">select upper(std_name) as uppernames from students;
+select lower(std_name) as lowernames from students;
+select substr(std_name,0,3) as subrnames from students;
+select std_name,length(std_name) as lengthnames from students;
+select replace(Std_name,'uday','bunny') from students;
+
+</sql><sql name="SQL 2*">select strftime('%Y',order_date) as years from orders;
+select strftime('%m',order_date) as months from orders;
+select strftime('%d',order_date) as days from orders;
+select strftime('%H',order_date) as Hours from orders;
+</sql><sql name="SQL 3*">select *from employee;
+</sql><sql name="SQL 4*">select *from employee;
+select name,coalesce(salary,0) from employee;
+select NAME,coalesce(bonus,salary) from employee;
+select name,Nullif(salary,50000) as salary from employee;
+select *from employee where salary is null;
+select *from employee where salary is not null;</sql><sql name="SQL 5*">select *from Employee_IT;
+</sql><sql name="SQL 7*">select * from employee_hr;</sql><sql name="SQL 8*">select *from  Employee_IT union select *from Employee_HR;
+select *from  Employee_IT union all select *from Employee_HR;</sql><sql name="SQL 9*">select *from customers;</sql><sql name="SQL 10*">select *from orders1;</sql><sql name="SQL 11*">SELECT *
+FROM customerlifetimevalue;</sql><sql name="SQL 12*">EXPLAIN QUERY PLAN select *from employee;</sql><current_tab id="10"/></tab_sql></sqlb_project>
