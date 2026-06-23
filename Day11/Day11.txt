@@ -1,0 +1,31 @@
+
+Day-11: Git for Data Projects
+
+Version Control (Git):
+
+Version  control is a tool that track changes made to the files and projects overtime.
+
+It allows developers to:
+
+-Save different verions of code.
+-See what changes were made.
+-Work with a team without overwritting other work.
+
+
+
+Command   				Meaning
+git init			Creates a new Git repository
+git status			Shows current file changes and status
+git add .			Adds all files to staging area
+git add filename		Adds a specific file to staging area
+git commit -m "message"		Saves staged changes with a message
+git log				Shows previous commit history
+git diff			Shows changes made before committing
+git clone URL			Downloads a Git repository to your computer
+git push			Uploads commits to remote repository
+git pull			Downloads latest changes from remote repository
+git branch			Shows available branches
+git branch branch_name		Creates a new branch
+git checkout branch_name	Switches to another branch
+git merge branch_name		Combines another branch into current branch
+git remote -v			Shows connected remote repositories
